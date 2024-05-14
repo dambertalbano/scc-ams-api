@@ -18,7 +18,7 @@ app.use(express.json());
 
 // CORS middleware with specific options
 const corsOptions ={
-    origin:'http://localhost:3000',
+    origin:'https://scc-ams.onrender.com',
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }

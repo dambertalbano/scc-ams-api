@@ -1,4 +1,4 @@
-const bcrypt = require('bcrypt');
+const bcryptjs = require('bcryptjs');
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const multer = require('multer');
@@ -105,7 +105,7 @@ const upload = multer({ storage });
 router.post('/add_teacher', upload.single('image'), async (req, res) => {
   try {
     const { name, email, password, department_id } = req.body;
-    const hash = await bcrypt.hash(password, 10);
+    const hash = await bcryptjs.hash(password, 10);
     const teacher = new TeacherModel({ name, email, password: hash, department_id });
     await teacher.save();
     return res.json({ Status: true });
