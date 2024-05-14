@@ -6,7 +6,7 @@ const {
     updateDepartment,
     deleteDepartment,
     getDepartmentByID
-} = require('../controllers/departmentControllers');
+} = require('../controllers/DepartmentControllers');
 
 const router = Router();
 

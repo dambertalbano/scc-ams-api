@@ -137,7 +137,7 @@ const {
     updateDepartment,
     deleteDepartment,
     getDepartmentByID
-} = require('../controllers/departmentControllers');
+} = require('../controllers/DepartmentControllers');
 
 // Endpoint to get all departments
 router.get('/department', getDepartments);

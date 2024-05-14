@@ -173,7 +173,7 @@ const {
     updateDepartment,
     deleteDepartment,
     getDepartmentByID
-} = require('../controllers/departmentControllers');
+} = require('../controllers/DepartmentControllers.js');
 
 // Endpoint to get all departments
 router.get('/department', getDepartments);
