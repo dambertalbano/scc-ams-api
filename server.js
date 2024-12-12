@@ -27,7 +27,7 @@ const corsOptions = {
 // Apply CORS middleware globally
 app.use(cors(corsOptions));
 
-// Middleware for handling preflight requests explicitly (can be omitted as `cors` already handles it)
+// Middleware for handling preflight requests explicitly (optional, not always needed if using cors)
 app.options('*', cors(corsOptions));
 
 // middlewares
