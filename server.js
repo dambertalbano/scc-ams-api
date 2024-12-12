@@ -19,9 +19,10 @@ connectCloudinary()
 // middlewares
 app.use(express.json())
 app.use(cors({
-  origin: ['https://scc-ams-frontend.vercel.app'], // Replace with your actual frontend URL
+  origin: ['https://scc-ams--three.vercel.app'],
   credentials: true
 }));
+
 
 
 // api endpoints
