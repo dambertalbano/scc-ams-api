@@ -19,16 +19,13 @@ connectCloudinary();
 // CORS configuration
 const corsOptions = {
   origin: 'https://scc-ams--three.vercel.app', // Your frontend domain
-  credentials: true,
+  credentials: true,  // Allow credentials (cookies, authorization headers, etc.)
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
   allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
 };
 
 // Apply CORS middleware globally
 app.use(cors(corsOptions));
-
-// Middleware for handling preflight requests explicitly (optional, not always needed if using cors)
-app.options('*', cors(corsOptions));
 
 // middlewares
 app.use(express.json());
