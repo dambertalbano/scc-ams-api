@@ -42,4 +42,5 @@ app.get("/", (req, res) => {
   res.send("API Working");
 });
 
-app.listen(port, () => console.log(`Server started on PORT:${port}`));
+// Vercel Serverless Handler
+export default app;
